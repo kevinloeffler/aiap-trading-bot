@@ -65,3 +65,15 @@ print('PREDICTING')
 
 predictions = model.predict(x_test)
 predictions = scaler.inverse_transform(predictions)
+
+# Plot performance
+real_stock_price = scaler.inverse_transform(testing_data)
+real_stock_price = real_stock_price[59: -1]  # Chop of the first 60 entries to make them the same length as predictions
+
+plt.plot(real_stock_price, color='black', label='Real Stock Price')
+plt.plot(predictions, color='green', label='Predicted Stock Price')
+plt.title('Stock Price Prediction')
+plt.xlabel('Time')
+plt.ylabel('Stock Price')
+plt.legend()
+plt.show()
