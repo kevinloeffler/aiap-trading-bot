@@ -20,3 +20,14 @@ dataset_scaled = scaler.fit_transform(dataset)
 # Split into training and testing data
 training_data = dataset_scaled[0: int(dataset.shape[0] * train_test_split)]
 testing_data = dataset_scaled[int(dataset.shape[0] * train_test_split): -1]
+
+# Reformat Data as time series
+x_train = []
+y_train = []
+for i in range(60, len(training_data)):
+    x_train.append(training_data[i-60: i, 0])
+    y_train.append(training_data[i, 0])
+x_train = np.array(x_train)
+y_train = np.array(y_train)
+
+x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
