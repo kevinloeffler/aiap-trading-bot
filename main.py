@@ -53,3 +53,15 @@ model.add(keras.layers.Dense(1))
 EPOCHS = 10
 model.compile(optimizer='adam', loss='mean_squared_error')
 model.fit(x_train, y_train, epochs=EPOCHS, batch_size=32)
+
+# Test
+x_test = []
+for i in range(60, len(testing_data)):
+    x_test.append(testing_data[i-60:i, 0])
+x_test = np.array(x_test)
+x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
+
+print('PREDICTING')
+
+predictions = model.predict(x_test)
+predictions = scaler.inverse_transform(predictions)
