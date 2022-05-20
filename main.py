@@ -48,3 +48,8 @@ model.add(keras.layers.LSTM(50))
 model.add(keras.layers.Dropout(0.2))
 
 model.add(keras.layers.Dense(1))
+
+# Train
+EPOCHS = 10
+model.compile(optimizer='adam', loss='mean_squared_error')
+model.fit(x_train, y_train, epochs=EPOCHS, batch_size=32)
