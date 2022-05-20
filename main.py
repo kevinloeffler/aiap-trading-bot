@@ -31,3 +31,20 @@ x_train = np.array(x_train)
 y_train = np.array(y_train)
 
 x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
+
+# Build Model
+model = keras.models.Sequential()
+
+model.add(keras.layers.LSTM(50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
+model.add(keras.layers.Dropout(0.2))
+
+model.add(keras.layers.LSTM(50, return_sequences=True))
+model.add(keras.layers.Dropout(0.2))
+
+model.add(keras.layers.LSTM(50, return_sequences=True))
+model.add(keras.layers.Dropout(0.2))
+
+model.add(keras.layers.LSTM(50))
+model.add(keras.layers.Dropout(0.2))
+
+model.add(keras.layers.Dense(1))
