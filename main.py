@@ -54,6 +54,9 @@ EPOCHS = 10
 model.compile(optimizer='adam', loss='mean_squared_error')
 model.fit(x_train, y_train, epochs=EPOCHS, batch_size=32)
 
+# Save model
+model.save('model')
+
 # Test
 x_test = []
 for i in range(60, len(testing_data)):
