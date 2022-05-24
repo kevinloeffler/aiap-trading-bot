@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import keras
 
+TRAIN_MODEL = False
 train_test_split = 0.8
 plt.rcParams["figure.figsize"] = (10, 6)  # make matplotlib figures bigger
 
@@ -50,12 +51,14 @@ model.add(keras.layers.Dropout(0.2))
 model.add(keras.layers.Dense(1))
 
 # Train
-EPOCHS = 10
-model.compile(optimizer='adam', loss='mean_squared_error')
-model.fit(x_train, y_train, epochs=EPOCHS, batch_size=32)
+EPOCHS = 25
 
-# Save model
-model.save('model')
+if TRAIN_MODEL:
+    model.compile(optimizer='adam', loss='mean_squared_error')
+    model.fit(x_train, y_train, epochs=EPOCHS, batch_size=32)
+
+    # Save model
+    model.save('model')
 
 # Test
 x_test = []
