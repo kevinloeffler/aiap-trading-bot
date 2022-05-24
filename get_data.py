@@ -4,8 +4,8 @@ import csv
 api: REST = REST()
 SYMBOL: str = 'AAPL'
 
-START_DATE = '2022-05-01T09:00:00Z'
-END_DATE = '2022-05-10T23:59:59Z'
+START_DATE = '2022-04-01T09:00:00Z'
+END_DATE = '2022-04-30T23:59:59Z'
 
 data = {
     'training_size': 0,
