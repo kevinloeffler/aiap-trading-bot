@@ -5,6 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 import keras
 
 TRAIN_MODEL = False
+PREDICT_MODEL = False
 train_test_split = 0.8
 plt.rcParams["figure.figsize"] = (10, 6)  # make matplotlib figures bigger
 
@@ -67,19 +68,22 @@ for i in range(60, len(testing_data)):
 x_test = np.array(x_test)
 x_test = np.reshape(x_test, (x_test.shape[0], x_test.shape[1], 1))
 
-print('PREDICTING')
+if PREDICT_MODEL:
+    model = keras.models.load_model('model')
 
-predictions = model.predict(x_test)
-predictions = scaler.inverse_transform(predictions)
+    print('PREDICTING')
 
-# Plot performance
-real_stock_price = scaler.inverse_transform(testing_data)
-real_stock_price = real_stock_price[59: -1]  # Chop of the first 60 entries to make them the same length as predictions
+    predictions = model.predict(x_test)
+    predictions = scaler.inverse_transform(predictions)
 
-plt.plot(real_stock_price, color='black', label='Real Stock Price')
-plt.plot(predictions, color='green', label='Predicted Stock Price')
-plt.title('Stock Price Prediction')
-plt.xlabel('Time')
-plt.ylabel('Stock Price')
-plt.legend()
-plt.show()
+    # Plot performance
+    real_stock_price = scaler.inverse_transform(testing_data)
+    real_stock_price = real_stock_price[59: -1]  # Chop of the first 60 entries to make them the same length as predictions
+
+    plt.plot(real_stock_price, color='black', label='Real Stock Price')
+    plt.plot(predictions, color='green', label='Predicted Stock Price')
+    plt.title('Stock Price Prediction')
+    plt.xlabel('Time')
+    plt.ylabel('Stock Price')
+    plt.legend()
+    plt.show()
