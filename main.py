@@ -39,8 +39,8 @@ model = keras.models.Sequential()
 model.add(keras.layers.LSTM(50, return_sequences=True, input_shape=(x_train.shape[1], 1)))
 model.add(keras.layers.Dropout(0.2))
 
-model.add(keras.layers.LSTM(50, return_sequences=True))
-model.add(keras.layers.Dropout(0.2))
+# model.add(keras.layers.LSTM(50, return_sequences=True))
+# model.add(keras.layers.Dropout(0.2))
 
 model.add(keras.layers.LSTM(50, return_sequences=True))
 model.add(keras.layers.Dropout(0.2))
