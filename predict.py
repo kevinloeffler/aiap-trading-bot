@@ -1,9 +1,30 @@
+import math
 import keras
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 
 
-def predict(prices: list) -> float:
+def prediction_to_action(x: float) -> (float, str):
+    print('x before:', x)
+    AGGRESSIVENESS: int = 2  # a higher value means bigger movements on each action
+    x: float = (x - 1) * AGGRESSIVENESS + 1
+
+    if x > 2:
+        x = 2
+    elif x < 0:
+        x = 0
+
+    print('x after:', x)
+
+    if x > 1:
+        a, b, side = 1, 0.5, 'buy'
+    else:
+        a, b, side = 0.5, 0.75, 'sell'
+
+    return (a / (1 + math.e ** (-100 * (x - 1))) + b), side
+
+
+def predict(prices: list) -> (float, str):
     model: keras.models.Model = keras.models.load_model('model')
     scaler: MinMaxScaler = MinMaxScaler(feature_range=(0, 1))
     last_price: int = prices[-1]
@@ -14,29 +35,7 @@ def predict(prices: list) -> float:
     # Predict
     prediction_raw = model.predict(prices_array)
     prediction = scaler.inverse_transform(prediction_raw)
+    print('Prediction:', prediction)
     # Translate to action
-    # ToDo: translate prediction to action
-    return prediction
-
-
-'''
-model = keras.models.load_model('model')
-
-test_data = []
-start_price = 160.
-
-for i in range(60):
-    test_data.append(start_price + i / 2)
-
-test_data = np.array(test_data).reshape(-1, 1)
-
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled_data = scaler.fit_transform(test_data)
-
-x_test = np.reshape(scaled_data, (1, 60, 1))
-
-prediction_raw = model.predict(x_test)
-prediction = scaler.inverse_transform(prediction_raw)
-
-print(prediction)
-'''
+    price_difference = prediction - last_price
+    return prediction_to_action(x=price_difference)
