@@ -10,7 +10,7 @@ TRAIN_TEST_SPLIT = 0.8
 TRAINING_STEPS = 60
 
 # Import Data
-dataset_raw = pd.read_csv('data/training_data.csv')
+dataset_raw = pd.read_csv('data/training_data_AAPL.csv')
 
 # Preprocess Data: Drop timestamp column
 dataset = dataset_raw.drop(['timestamp'], axis=1)
