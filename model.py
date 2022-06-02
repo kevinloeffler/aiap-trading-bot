@@ -2,11 +2,11 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 import keras
-
+import tensorflow as tf
 
 def get_data():
     # Import Data
-    dataset_raw = pd.read_csv('data/training_data_AAPL.csv')
+    dataset_raw = pd.read_csv('data/training_data_AAPL.csv') #TODO final with ETH
 
     # Preprocess Data: Drop timestamp column
     dataset = dataset_raw.drop(['timestamp'], axis=1)
@@ -42,10 +42,10 @@ def reformat_data_as_time_series(training_data, step):
 def train_model(params, training_data):
     units = params["rnn_units"]
     step = params["step"]
-    optimizer = params["optimizer"]
     learning_rate = params["learning_rate"]
     batch_size = params["batch_size"]
     epochs = params["epochs"]
+    dropout = params["dropout"]
 
     x_train, y_train = reformat_data_as_time_series(training_data, step)
 
@@ -54,15 +54,19 @@ def train_model(params, training_data):
     model = keras.models.Sequential()
 
     model.add(keras.layers.LSTM(units, return_sequences=True, input_shape=(x_train.shape[1], 1)))
-    model.add(keras.layers.Dropout(0.2))
+    model.add(keras.layers.Dropout(dropout))
 
     model.add(keras.layers.LSTM(units, return_sequences=True))
-    model.add(keras.layers.Dropout(0.2))
+    model.add(keras.layers.Dropout(dropout))
 
     model.add(keras.layers.LSTM(units))
-    model.add(keras.layers.Dropout(0.2))
+    model.add(keras.layers.Dropout(dropout))
 
     model.add(keras.layers.Dense(1))
+
+    optimizer = tf.keras.optimizers.Adam(
+        learning_rate=learning_rate
+    )
 
     # Train
     model.compile(optimizer=optimizer, loss='mean_squared_error')

@@ -3,7 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import itertools as it
 from timeit import default_timer as timer
-from sklearn.preprocessing import MinMaxScaler
+from IPython.display import display
+from error_prediction import calculate_error
 
 
 def plot_performance(params, history, model, training_data, testing_data):
@@ -32,60 +33,34 @@ def plot_performance(params, history, model, training_data, testing_data):
     test_loss = model.evaluate(x=x_test, y=y_test, verbose=0)
 
     # plot and save to png
-    fig, axs = plt.subplots(ncols=2)
-    ax = axs[0]
-    ax.grid()
-    ax.plot(np.arange(0, len(training_data)), training_data, color="tab:blue")
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    ax.plot(np.arange(0, len(training_data)), training_data, color="tab:blue", label='Tests')
     ax.plot(np.arange(0, len(testing_data))+split_index, testing_data, color="tab:blue")
-    ax.plot(np.arange(len(predict_train))+step, predict_train, color="tab:orange")
+    ax.plot(np.arange(len(predict_train))+step, predict_train, color="tab:orange", label='Predictions')
     ax.plot(np.arange(len(predict_test))+split_index+step, predict_test, color="tab:orange")
     ax.set_xlabel("Time")
     ax.set_ylabel("Stock Price")
     ax.axvline(split_index, c="black", ls="--")
-    ax = axs[1]
-    ax.grid()
-    ax.plot(history.history["loss"], label="train_loss")
-    ax.plot(history.history["val_loss"], label="val_loss")
-    ax.set_xlabel("epoch")
-    ax.set_ylabel("loss")
     title = "#x_test " + str(len(x_test)) + " step size = " + str(step) + " test loss " + str(round(test_loss,3)) + " train loss " + str(round(train_loss,3))
     ax.set_title(title)
-    ax.legend(loc="center")
+    ax.legend(loc="right")
     filename = f"testloss-{int(test_loss)}_trainloss-{int(train_loss)}_" + "_".join([str(key) + "-" + str(value) for key, value in params.items()])
     fig.set_size_inches(300/25.4, 100/25.4)
     plt.savefig(f"train/{filename}.png", dpi=300)
-    return train_loss, test_loss
+    return train_loss, test_loss, predict_train, predict_test, training_data, testing_data
 
 
 TRAIN_TEST_SPLIT = 0.8
 
-
 params = {
-    "rnn_units": [50],
-    "rnn_activation": ["tanh"], # ["relu", "tanh"],
-    "step": [90],
-    "dense_neurons": [20],
-    "dense_activation": ["relu"], # ["relu", "tanh"],
-    #"epochs": [50, 100, 150, 200, 250, 300, 350],
-    "epochs": [1],
+    "rnn_units": [25, 50],
+    "step": [30, 60, 90],
+    "epochs": [10, 30],
     "batch_size": [32],
-    "optimizer": ["adam"],
-    "learning_rate": [0.0005],
+    "learning_rate": [0.0005, 0.002],
+    "dropout": [0.1, 0.3]
 }
-
-#params = {
-#    "rnn_units": [50],
-#    "rnn_activation": ["tanh"], # ["relu", "tanh"],
-#    "step": [30, 60, 90],
-#    "dense_neurons": [20],
-#    "dense_activation": ["relu"], # ["relu", "tanh"],
-#    #"epochs": [50, 100, 150, 200, 250, 300, 350],
-#    "epochs": [25, 50],
-#    "batch_size": [32],
-#    "optimizer": ["adam"],
-#    "learning_rate": [0.0005],
-#}
-
 
 # read the data
 dataset = get_data()
@@ -124,45 +99,28 @@ for combination in combinations:
 
     print(f"####train finish, time passed = {passed:.1f} seconds, avg per combination = {avg:.1f} seconds, predicted = {(total/60):.3f} minutes, remain = {(remain/60):.3f} minutes")
 
-## test and plot
-#i = 0
-#ratios = []
-#for combination in combinations:
-#    # plot the performance values
-#    train_loss, test_loss = plot_performance(combination, models[i][0], models[i][1], training_data, testing_data)
-#    print(f"train loss = ", train_loss )
-#    print(f"test loss = ", test_loss )
-#    combination["test loss"] = test_loss
-#    combination["train loss"] = train_loss
-#    combination["ratio"] = test_loss/train_loss
-#    i += 1
+# test and plot
+i = 0
+ratios = []
+for combination in combinations:
+    # plot the performance values
+    history = models[i][0]
+    model = models[i][1]
+    train_loss, test_loss, predict_train, predict_test, training_data, testing_data = plot_performance(combination, history, model, training_data, testing_data)
+    print(f"train loss = ", train_loss)
+    print(f"test loss = ", test_loss)
+    combination["test loss"] = test_loss
+    combination["train loss"] = train_loss
+    combination["ratio"] = test_loss/train_loss
+    error_pos, error_neg = calculate_error(history, predict_test, testing_data)
+    combination["error_neg"] = error_neg[0]
+    combination["error_pos"] = error_pos[0]
+    i += 1
 
 
 import pandas as pd
 df = pd.DataFrame.from_dict(combinations)
-df = df.drop(['rnn_units', 'rnn_activation', 'dense_neurons', 'batch_size', 'learning_rate'], axis=1)
+pd.set_option('display.max_columns', None)
+#df = df.drop(['rnn_units', 'batch_size', 'learning_rate'], axis=1)
+display(df)
 
-for dfIter in range(len(df)):
-    predictions = []
-    step = df.loc[dfIter, "step"]
-    first_batch = training_data[-step:]
-
-    current_batch = first_batch.reshape((1, step, 1))
-
-    for i in range(len(testing_data)):
-        current_pred = models[dfIter][1].predict(current_batch)[0]
-        predictions.append(current_pred)
-        current_batch_update = current_batch[:, 1:, :]
-        print("before issue")
-        current_batch = np.append(current_batch_update, [[current_pred]], axis=2)
-        print("after issue")
-
-    scaler = MinMaxScaler(feature_range=(0, 1))
-    predictions_inverse_scaled = scaler.inverse_transform(predictions)
-    test_inverse_scaled = scaler.inverse_transform(testing_data)
-    plt.plot(predictions_inverse_scaled, label='predictions')
-    plt.plot(test_inverse_scaled, label='test')
-    plt.legend()
-    title = "step=" + str(step) + " epochs=" + str(df.loc[dfIter, "epochs"])
-    plt.title(title)
-    plt.show()
