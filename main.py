@@ -15,7 +15,7 @@ WS_STREAM_URL = 'wss://stream.data.alpaca.markets/v1beta1/crypto' if IS_CRYPTO e
 AUTH_MSG = {'action': 'auth', 'key': f'{os.getenv("APCA_API_KEY_ID")}', 'secret': f'{os.getenv("APCA_API_SECRET_KEY")}'}
 SUBSCRIPTION_MSG = {"action": "subscribe", "bars": [TARGET_SYMBOL]}
 
-price_queue = [0] * 60
+price_queue = [0] * 30
 
 
 def handle_bar(queue: list, bar: dict):
