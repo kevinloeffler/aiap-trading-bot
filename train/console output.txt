@@ -1,0 +1,1474 @@
+there are 72 combinations
+####train start 1/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+2022-06-02 13:56:26.106229: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Epoch 1/3
+200/200 [==============================] - 11s 29ms/step - loss: 0.0325
+Epoch 2/3
+200/200 [==============================] - 6s 29ms/step - loss: 0.0045
+Epoch 3/3
+200/200 [==============================] - 6s 28ms/step - loss: 0.0039
+####train finish, time passed = 23.3 seconds, avg per combination = 23.3 seconds, predicted = 27.978 minutes, remain = 27.589 minutes
+####train start 2/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 11s 28ms/step - loss: 0.0429
+Epoch 2/3
+200/200 [==============================] - 6s 28ms/step - loss: 0.0068
+Epoch 3/3
+200/200 [==============================] - 6s 28ms/step - loss: 0.0059
+####train finish, time passed = 45.7 seconds, avg per combination = 22.9 seconds, predicted = 27.443 minutes, remain = 26.680 minutes
+####train start 3/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+200/200 [==============================] - 11s 28ms/step - loss: 0.0177
+Epoch 2/3
+200/200 [==============================] - 6s 28ms/step - loss: 0.0033
+Epoch 3/3
+200/200 [==============================] - 6s 29ms/step - loss: 0.0028
+####train finish, time passed = 68.5 seconds, avg per combination = 22.8 seconds, predicted = 27.407 minutes, remain = 26.265 minutes
+####train start 4/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 12s 31ms/step - loss: 0.0236
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0070
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0050
+####train finish, time passed = 93.1 seconds, avg per combination = 23.3 seconds, predicted = 27.932 minutes, remain = 26.380 minutes
+####train start 5/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+200/200 [==============================] - 11s 29ms/step - loss: 0.0145
+Epoch 2/3
+200/200 [==============================] - 6s 29ms/step - loss: 0.0032
+Epoch 3/3
+200/200 [==============================] - 6s 28ms/step - loss: 0.0031
+####train finish, time passed = 116.1 seconds, avg per combination = 23.2 seconds, predicted = 27.854 minutes, remain = 25.919 minutes
+####train start 6/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 11s 31ms/step - loss: 0.0183
+Epoch 2/3
+200/200 [==============================] - 6s 30ms/step - loss: 0.0060
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0041
+####train finish, time passed = 139.9 seconds, avg per combination = 23.3 seconds, predicted = 27.983 minutes, remain = 25.651 minutes
+####train start 7/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 9s 35ms/step - loss: 0.0335
+Epoch 2/3
+100/100 [==============================] - 4s 35ms/step - loss: 0.0047
+Epoch 3/3
+100/100 [==============================] - 4s 35ms/step - loss: 0.0039
+####train finish, time passed = 156.2 seconds, avg per combination = 22.3 seconds, predicted = 26.784 minutes, remain = 24.180 minutes
+####train start 8/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 8s 32ms/step - loss: 0.0564
+Epoch 2/3
+100/100 [==============================] - 3s 31ms/step - loss: 0.0073
+Epoch 3/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0065
+####train finish, time passed = 170.9 seconds, avg per combination = 21.4 seconds, predicted = 25.629 minutes, remain = 22.781 minutes
+####train start 9/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 8s 31ms/step - loss: 0.0246
+Epoch 2/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0038
+Epoch 3/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0034
+####train finish, time passed = 185.7 seconds, avg per combination = 20.6 seconds, predicted = 24.764 minutes, remain = 21.669 minutes
+####train start 10/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 8s 31ms/step - loss: 0.0412
+Epoch 2/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0070
+Epoch 3/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0057
+####train finish, time passed = 200.2 seconds, avg per combination = 20.0 seconds, predicted = 24.029 minutes, remain = 20.692 minutes
+####train start 11/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 8s 31ms/step - loss: 0.0240
+Epoch 2/3
+100/100 [==============================] - 3s 31ms/step - loss: 0.0031
+Epoch 3/3
+100/100 [==============================] - 3s 31ms/step - loss: 0.0028
+####train finish, time passed = 215.4 seconds, avg per combination = 19.6 seconds, predicted = 23.500 minutes, remain = 19.910 minutes
+####train start 12/72 {'rnn_units': 25, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 8s 31ms/step - loss: 0.0306
+Epoch 2/3
+100/100 [==============================] - 3s 31ms/step - loss: 0.0057
+Epoch 3/3
+100/100 [==============================] - 3s 30ms/step - loss: 0.0051
+####train finish, time passed = 230.0 seconds, avg per combination = 19.2 seconds, predicted = 23.003 minutes, remain = 19.169 minutes
+####train start 13/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 15s 54ms/step - loss: 0.0280
+Epoch 2/3
+199/199 [==============================] - 11s 53ms/step - loss: 0.0039
+Epoch 3/3
+199/199 [==============================] - 11s 54ms/step - loss: 0.0033
+####train finish, time passed = 267.3 seconds, avg per combination = 20.6 seconds, predicted = 24.677 minutes, remain = 20.221 minutes
+####train start 14/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 15s 54ms/step - loss: 0.0311
+Epoch 2/3
+199/199 [==============================] - 11s 54ms/step - loss: 0.0071
+Epoch 3/3
+199/199 [==============================] - 11s 55ms/step - loss: 0.0067
+####train finish, time passed = 305.1 seconds, avg per combination = 21.8 seconds, predicted = 26.147 minutes, remain = 21.063 minutes
+####train start 15/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 16s 54ms/step - loss: 0.0169
+Epoch 2/3
+199/199 [==============================] - 11s 53ms/step - loss: 0.0036
+Epoch 3/3
+199/199 [==============================] - 11s 53ms/step - loss: 0.0032
+####train finish, time passed = 343.0 seconds, avg per combination = 22.9 seconds, predicted = 27.438 minutes, remain = 21.722 minutes
+####train start 16/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 15s 53ms/step - loss: 0.0232
+Epoch 2/3
+199/199 [==============================] - 11s 54ms/step - loss: 0.0057
+Epoch 3/3
+199/199 [==============================] - 11s 53ms/step - loss: 0.0051
+####train finish, time passed = 380.3 seconds, avg per combination = 23.8 seconds, predicted = 28.520 minutes, remain = 22.182 minutes
+####train start 17/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 15s 54ms/step - loss: 0.0128
+Epoch 2/3
+199/199 [==============================] - 12s 58ms/step - loss: 0.0032
+Epoch 3/3
+199/199 [==============================] - 12s 60ms/step - loss: 0.0030
+####train finish, time passed = 419.9 seconds, avg per combination = 24.7 seconds, predicted = 29.639 minutes, remain = 22.641 minutes
+####train start 18/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 16s 55ms/step - loss: 0.0168
+Epoch 2/3
+199/199 [==============================] - 10s 52ms/step - loss: 0.0052
+Epoch 3/3
+199/199 [==============================] - 11s 53ms/step - loss: 0.0042
+####train finish, time passed = 457.8 seconds, avg per combination = 25.4 seconds, predicted = 30.518 minutes, remain = 22.888 minutes
+####train start 19/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 11s 60ms/step - loss: 0.0440
+Epoch 2/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0043
+Epoch 3/3
+100/100 [==============================] - 6s 58ms/step - loss: 0.0039
+####train finish, time passed = 481.8 seconds, avg per combination = 25.4 seconds, predicted = 30.427 minutes, remain = 22.398 minutes
+####train start 20/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 10s 57ms/step - loss: 0.0557
+Epoch 2/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0076
+Epoch 3/3
+100/100 [==============================] - 6s 58ms/step - loss: 0.0066
+####train finish, time passed = 504.6 seconds, avg per combination = 25.2 seconds, predicted = 30.274 minutes, remain = 21.865 minutes
+####train start 21/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 11s 59ms/step - loss: 0.0297
+Epoch 2/3
+100/100 [==============================] - 6s 58ms/step - loss: 0.0037
+Epoch 3/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0030
+####train finish, time passed = 527.6 seconds, avg per combination = 25.1 seconds, predicted = 30.149 minutes, remain = 21.355 minutes
+####train start 22/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 11s 60ms/step - loss: 0.0427
+Epoch 2/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0070
+Epoch 3/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0062
+####train finish, time passed = 550.7 seconds, avg per combination = 25.0 seconds, predicted = 30.037 minutes, remain = 20.859 minutes
+####train start 23/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 11s 59ms/step - loss: 0.0230
+Epoch 2/3
+100/100 [==============================] - 6s 58ms/step - loss: 0.0037
+Epoch 3/3
+100/100 [==============================] - 6s 59ms/step - loss: 0.0033
+####train finish, time passed = 574.5 seconds, avg per combination = 25.0 seconds, predicted = 29.976 minutes, remain = 20.400 minutes
+####train start 24/72 {'rnn_units': 25, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 11s 58ms/step - loss: 0.0271
+Epoch 2/3
+100/100 [==============================] - 6s 57ms/step - loss: 0.0059
+Epoch 3/3
+100/100 [==============================] - 6s 58ms/step - loss: 0.0053
+####train finish, time passed = 597.2 seconds, avg per combination = 24.9 seconds, predicted = 29.860 minutes, remain = 19.907 minutes
+####train start 25/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 21s 80ms/step - loss: 0.0253
+Epoch 2/3
+198/198 [==============================] - 16s 79ms/step - loss: 0.0037
+Epoch 3/3
+198/198 [==============================] - 16s 79ms/step - loss: 0.0036
+####train finish, time passed = 649.6 seconds, avg per combination = 26.0 seconds, predicted = 31.180 minutes, remain = 20.354 minutes
+####train start 26/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 21s 81ms/step - loss: 0.0272
+Epoch 2/3
+198/198 [==============================] - 16s 81ms/step - loss: 0.0067
+Epoch 3/3
+198/198 [==============================] - 16s 81ms/step - loss: 0.0060
+####train finish, time passed = 702.9 seconds, avg per combination = 27.0 seconds, predicted = 32.442 minutes, remain = 20.727 minutes
+####train start 27/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 21s 82ms/step - loss: 0.0180
+Epoch 2/3
+198/198 [==============================] - 18s 90ms/step - loss: 0.0037
+Epoch 3/3
+198/198 [==============================] - 17s 84ms/step - loss: 0.0032
+####train finish, time passed = 759.0 seconds, avg per combination = 28.1 seconds, predicted = 33.734 minutes, remain = 21.084 minutes
+####train start 28/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 23s 89ms/step - loss: 0.0187
+Epoch 2/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0056
+Epoch 3/3
+198/198 [==============================] - 16s 80ms/step - loss: 0.0049
+####train finish, time passed = 815.3 seconds, avg per combination = 29.1 seconds, predicted = 34.940 minutes, remain = 21.352 minutes
+####train start 29/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 22s 81ms/step - loss: 0.0129
+Epoch 2/3
+198/198 [==============================] - 16s 81ms/step - loss: 0.0029
+Epoch 3/3
+198/198 [==============================] - 16s 81ms/step - loss: 0.0026
+####train finish, time passed = 869.9 seconds, avg per combination = 30.0 seconds, predicted = 35.994 minutes, remain = 21.497 minutes
+####train start 30/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 20s 79ms/step - loss: 0.0141
+Epoch 2/3
+198/198 [==============================] - 16s 80ms/step - loss: 0.0056
+Epoch 3/3
+198/198 [==============================] - 16s 79ms/step - loss: 0.0043
+####train finish, time passed = 922.4 seconds, avg per combination = 30.7 seconds, predicted = 36.896 minutes, remain = 21.523 minutes
+####train start 31/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 13s 86ms/step - loss: 0.0420
+Epoch 2/3
+99/99 [==============================] - 8s 86ms/step - loss: 0.0042
+Epoch 3/3
+99/99 [==============================] - 8s 86ms/step - loss: 0.0037
+####train finish, time passed = 953.3 seconds, avg per combination = 30.8 seconds, predicted = 36.902 minutes, remain = 21.013 minutes
+####train start 32/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 13s 85ms/step - loss: 0.0651
+Epoch 2/3
+99/99 [==============================] - 9s 86ms/step - loss: 0.0096
+Epoch 3/3
+99/99 [==============================] - 9s 88ms/step - loss: 0.0079
+####train finish, time passed = 984.4 seconds, avg per combination = 30.8 seconds, predicted = 36.916 minutes, remain = 20.509 minutes
+####train start 33/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 15s 90ms/step - loss: 0.0248
+Epoch 2/3
+99/99 [==============================] - 8s 85ms/step - loss: 0.0038
+Epoch 3/3
+99/99 [==============================] - 8s 85ms/step - loss: 0.0033
+####train finish, time passed = 1016.5 seconds, avg per combination = 30.8 seconds, predicted = 36.963 minutes, remain = 20.022 minutes
+####train start 34/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 13s 85ms/step - loss: 0.0385
+Epoch 2/3
+99/99 [==============================] - 8s 86ms/step - loss: 0.0068
+Epoch 3/3
+99/99 [==============================] - 8s 85ms/step - loss: 0.0060
+####train finish, time passed = 1047.3 seconds, avg per combination = 30.8 seconds, predicted = 36.964 minutes, remain = 19.509 minutes
+####train start 35/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 13s 85ms/step - loss: 0.0306
+Epoch 2/3
+99/99 [==============================] - 8s 85ms/step - loss: 0.0037
+Epoch 3/3
+99/99 [==============================] - 9s 86ms/step - loss: 0.0030
+####train finish, time passed = 1078.1 seconds, avg per combination = 30.8 seconds, predicted = 36.964 minutes, remain = 18.995 minutes
+####train start 36/72 {'rnn_units': 25, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 15s 85ms/step - loss: 0.0218
+Epoch 2/3
+99/99 [==============================] - 10s 100ms/step - loss: 0.0062
+Epoch 3/3
+99/99 [==============================] - 10s 104ms/step - loss: 0.0056
+####train finish, time passed = 1113.5 seconds, avg per combination = 30.9 seconds, predicted = 37.116 minutes, remain = 18.558 minutes
+####train start 37/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+200/200 [==============================] - 12s 36ms/step - loss: 0.0152
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0026
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0022
+####train finish, time passed = 1139.0 seconds, avg per combination = 30.8 seconds, predicted = 36.940 minutes, remain = 17.957 minutes
+####train start 38/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 11s 31ms/step - loss: 0.0198
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0042
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0041
+####train finish, time passed = 1163.1 seconds, avg per combination = 30.6 seconds, predicted = 36.731 minutes, remain = 17.345 minutes
+####train start 39/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+200/200 [==============================] - 11s 31ms/step - loss: 0.0123
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0023
+Epoch 3/3
+200/200 [==============================] - 6s 32ms/step - loss: 0.0019
+####train finish, time passed = 1187.4 seconds, avg per combination = 30.4 seconds, predicted = 36.535 minutes, remain = 16.745 minutes
+####train start 40/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 11s 31ms/step - loss: 0.0140
+Epoch 2/3
+200/200 [==============================] - 6s 32ms/step - loss: 0.0036
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0034
+####train finish, time passed = 1211.8 seconds, avg per combination = 30.3 seconds, predicted = 36.353 minutes, remain = 16.157 minutes
+####train start 41/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+200/200 [==============================] - 11s 31ms/step - loss: 0.0127
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0021
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0020
+####train finish, time passed = 1235.8 seconds, avg per combination = 30.1 seconds, predicted = 36.170 minutes, remain = 15.573 minutes
+####train start 42/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+200/200 [==============================] - 12s 31ms/step - loss: 0.0117
+Epoch 2/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0034
+Epoch 3/3
+200/200 [==============================] - 6s 31ms/step - loss: 0.0028
+####train finish, time passed = 1260.4 seconds, avg per combination = 30.0 seconds, predicted = 36.012 minutes, remain = 15.005 minutes
+####train start 43/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 9s 40ms/step - loss: 0.0291
+Epoch 2/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0024
+Epoch 3/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0022
+####train finish, time passed = 1277.8 seconds, avg per combination = 29.7 seconds, predicted = 35.661 minutes, remain = 14.363 minutes
+####train start 44/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 10s 40ms/step - loss: 0.0265
+Epoch 2/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0045
+Epoch 3/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0042
+####train finish, time passed = 1296.8 seconds, avg per combination = 29.5 seconds, predicted = 35.369 minutes, remain = 13.754 minutes
+####train start 45/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 9s 40ms/step - loss: 0.0222
+Epoch 2/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0023
+Epoch 3/3
+100/100 [==============================] - 4s 41ms/step - loss: 0.0020
+####train finish, time passed = 1314.3 seconds, avg per combination = 29.2 seconds, predicted = 35.048 minutes, remain = 13.143 minutes
+####train start 46/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 9s 41ms/step - loss: 0.0271
+Epoch 2/3
+100/100 [==============================] - 4s 41ms/step - loss: 0.0041
+Epoch 3/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0036
+####train finish, time passed = 1332.0 seconds, avg per combination = 29.0 seconds, predicted = 34.747 minutes, remain = 12.547 minutes
+####train start 47/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 9s 40ms/step - loss: 0.0167
+Epoch 2/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0021
+Epoch 3/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0019
+####train finish, time passed = 1349.3 seconds, avg per combination = 28.7 seconds, predicted = 34.450 minutes, remain = 11.962 minutes
+####train start 48/72 {'rnn_units': 50, 'step': 30, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 9s 40ms/step - loss: 0.0194
+Epoch 2/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0034
+Epoch 3/3
+100/100 [==============================] - 4s 40ms/step - loss: 0.0035
+####train finish, time passed = 1366.8 seconds, avg per combination = 28.5 seconds, predicted = 34.170 minutes, remain = 11.390 minutes
+####train start 49/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 16s 59ms/step - loss: 0.0171
+Epoch 2/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0022
+Epoch 3/3
+199/199 [==============================] - 12s 61ms/step - loss: 0.0021
+####train finish, time passed = 1407.7 seconds, avg per combination = 28.7 seconds, predicted = 34.474 minutes, remain = 11.013 minutes
+####train start 50/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 16s 59ms/step - loss: 0.0197
+Epoch 2/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0039
+Epoch 3/3
+199/199 [==============================] - 12s 63ms/step - loss: 0.0035
+####train finish, time passed = 1449.2 seconds, avg per combination = 29.0 seconds, predicted = 34.780 minutes, remain = 10.627 minutes
+####train start 51/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 18s 67ms/step - loss: 0.0101
+Epoch 2/3
+199/199 [==============================] - 13s 64ms/step - loss: 0.0023
+Epoch 3/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0019
+####train finish, time passed = 1493.0 seconds, avg per combination = 29.3 seconds, predicted = 35.130 minutes, remain = 10.246 minutes
+####train start 52/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 17s 59ms/step - loss: 0.0152
+Epoch 2/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0036
+Epoch 3/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0031
+####train finish, time passed = 1533.7 seconds, avg per combination = 29.5 seconds, predicted = 35.393 minutes, remain = 9.831 minutes
+####train start 53/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+199/199 [==============================] - 17s 59ms/step - loss: 0.0091
+Epoch 2/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0022
+Epoch 3/3
+199/199 [==============================] - 12s 59ms/step - loss: 0.0018
+####train finish, time passed = 1574.4 seconds, avg per combination = 29.7 seconds, predicted = 35.646 minutes, remain = 9.407 minutes
+####train start 54/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+199/199 [==============================] - 19s 60ms/step - loss: 0.0133
+Epoch 2/3
+199/199 [==============================] - 12s 60ms/step - loss: 0.0034
+Epoch 3/3
+199/199 [==============================] - 12s 60ms/step - loss: 0.0029
+####train finish, time passed = 1617.7 seconds, avg per combination = 30.0 seconds, predicted = 35.948 minutes, remain = 8.987 minutes
+####train start 55/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 13s 79ms/step - loss: 0.0344
+Epoch 2/3
+100/100 [==============================] - 8s 79ms/step - loss: 0.0027
+Epoch 3/3
+100/100 [==============================] - 8s 80ms/step - loss: 0.0024
+####train finish, time passed = 1646.8 seconds, avg per combination = 29.9 seconds, predicted = 35.931 minutes, remain = 8.484 minutes
+####train start 56/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 13s 79ms/step - loss: 0.0355
+Epoch 2/3
+100/100 [==============================] - 8s 80ms/step - loss: 0.0046
+Epoch 3/3
+100/100 [==============================] - 8s 79ms/step - loss: 0.0040
+####train finish, time passed = 1676.0 seconds, avg per combination = 29.9 seconds, predicted = 35.915 minutes, remain = 7.981 minutes
+####train start 57/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 13s 78ms/step - loss: 0.0201
+Epoch 2/3
+100/100 [==============================] - 8s 78ms/step - loss: 0.0028
+Epoch 3/3
+100/100 [==============================] - 8s 79ms/step - loss: 0.0021
+####train finish, time passed = 1705.0 seconds, avg per combination = 29.9 seconds, predicted = 35.895 minutes, remain = 7.478 minutes
+####train start 58/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 13s 78ms/step - loss: 0.0245
+Epoch 2/3
+100/100 [==============================] - 8s 79ms/step - loss: 0.0043
+Epoch 3/3
+100/100 [==============================] - 8s 78ms/step - loss: 0.0036
+####train finish, time passed = 1734.3 seconds, avg per combination = 29.9 seconds, predicted = 35.881 minutes, remain = 6.977 minutes
+####train start 59/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+100/100 [==============================] - 13s 80ms/step - loss: 0.0146
+Epoch 2/3
+100/100 [==============================] - 9s 92ms/step - loss: 0.0021
+Epoch 3/3
+100/100 [==============================] - 8s 83ms/step - loss: 0.0020
+####train finish, time passed = 1765.1 seconds, avg per combination = 29.9 seconds, predicted = 35.900 minutes, remain = 6.482 minutes
+####train start 60/72 {'rnn_units': 50, 'step': 60, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+100/100 [==============================] - 13s 81ms/step - loss: 0.0174
+Epoch 2/3
+100/100 [==============================] - 8s 85ms/step - loss: 0.0038
+Epoch 3/3
+100/100 [==============================] - 9s 88ms/step - loss: 0.0032
+####train finish, time passed = 1795.8 seconds, avg per combination = 29.9 seconds, predicted = 35.916 minutes, remain = 5.986 minutes
+####train start 61/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 25s 98ms/step - loss: 0.0156
+Epoch 2/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0024
+Epoch 3/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0021
+####train finish, time passed = 1855.4 seconds, avg per combination = 30.4 seconds, predicted = 36.499 minutes, remain = 5.576 minutes
+####train start 62/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 22s 88ms/step - loss: 0.0173
+Epoch 2/3
+198/198 [==============================] - 20s 100ms/step - loss: 0.0041
+Epoch 3/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0038
+####train finish, time passed = 1913.2 seconds, avg per combination = 30.9 seconds, predicted = 37.029 minutes, remain = 5.143 minutes
+####train start 63/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 22s 87ms/step - loss: 0.0086
+Epoch 2/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0023
+Epoch 3/3
+198/198 [==============================] - 17s 86ms/step - loss: 0.0019
+####train finish, time passed = 1970.0 seconds, avg per combination = 31.3 seconds, predicted = 37.525 minutes, remain = 4.691 minutes
+####train start 64/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 22s 86ms/step - loss: 0.0141
+Epoch 2/3
+198/198 [==============================] - 17s 88ms/step - loss: 0.0038
+Epoch 3/3
+198/198 [==============================] - 19s 98ms/step - loss: 0.0031
+####train finish, time passed = 2029.4 seconds, avg per combination = 31.7 seconds, predicted = 38.051 minutes, remain = 4.228 minutes
+####train start 65/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+198/198 [==============================] - 22s 89ms/step - loss: 0.0100
+Epoch 2/3
+198/198 [==============================] - 18s 90ms/step - loss: 0.0022
+Epoch 3/3
+198/198 [==============================] - 18s 89ms/step - loss: 0.0018
+####train finish, time passed = 2088.0 seconds, avg per combination = 32.1 seconds, predicted = 38.547 minutes, remain = 3.748 minutes
+####train start 66/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 32, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+198/198 [==============================] - 25s 90ms/step - loss: 0.0101
+Epoch 2/3
+198/198 [==============================] - 18s 90ms/step - loss: 0.0034
+Epoch 3/3
+198/198 [==============================] - 18s 91ms/step - loss: 0.0028
+####train finish, time passed = 2149.6 seconds, avg per combination = 32.6 seconds, predicted = 39.083 minutes, remain = 3.257 minutes
+####train start 67/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 17s 123ms/step - loss: 0.0223
+Epoch 2/3
+99/99 [==============================] - 13s 131ms/step - loss: 0.0026
+Epoch 3/3
+99/99 [==============================] - 13s 135ms/step - loss: 0.0024
+####train finish, time passed = 2193.6 seconds, avg per combination = 32.7 seconds, predicted = 39.288 minutes, remain = 2.728 minutes
+####train start 68/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.0005, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 17s 119ms/step - loss: 0.0320
+Epoch 2/3
+99/99 [==============================] - 12s 118ms/step - loss: 0.0047
+Epoch 3/3
+99/99 [==============================] - 12s 118ms/step - loss: 0.0039
+####train finish, time passed = 2234.8 seconds, avg per combination = 32.9 seconds, predicted = 39.437 minutes, remain = 2.191 minutes
+####train start 69/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 18s 136ms/step - loss: 0.0242
+Epoch 2/3
+99/99 [==============================] - 12s 118ms/step - loss: 0.0025
+Epoch 3/3
+99/99 [==============================] - 12s 117ms/step - loss: 0.0021
+####train finish, time passed = 2277.0 seconds, avg per combination = 33.0 seconds, predicted = 39.599 minutes, remain = 1.650 minutes
+####train start 70/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.001, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 16s 118ms/step - loss: 0.0197
+Epoch 2/3
+99/99 [==============================] - 12s 118ms/step - loss: 0.0043
+Epoch 3/3
+99/99 [==============================] - 12s 118ms/step - loss: 0.0039
+####train finish, time passed = 2317.5 seconds, avg per combination = 33.1 seconds, predicted = 39.728 minutes, remain = 1.104 minutes
+####train start 71/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.1}
+Epoch 1/3
+99/99 [==============================] - 16s 118ms/step - loss: 0.0190
+Epoch 2/3
+99/99 [==============================] - 12s 119ms/step - loss: 0.0022
+Epoch 3/3
+99/99 [==============================] - 12s 119ms/step - loss: 0.0021
+####train finish, time passed = 2358.2 seconds, avg per combination = 33.2 seconds, predicted = 39.858 minutes, remain = 0.554 minutes
+####train start 72/72 {'rnn_units': 50, 'step': 90, 'epochs': 3, 'batch_size': 64, 'learning_rate': 0.002, 'dropout': 0.2}
+Epoch 1/3
+99/99 [==============================] - 17s 120ms/step - loss: 0.0213
+Epoch 2/3
+99/99 [==============================] - 12s 119ms/step - loss: 0.0035
+Epoch 3/3
+99/99 [==============================] - 12s 119ms/step - loss: 0.0030
+####train finish, time passed = 2399.1 seconds, avg per combination = 33.3 seconds, predicted = 39.985 minutes, remain = 0.000 minutes
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 7ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.003898484632372856
+test loss =  0.0005856613861396909
+Positive Error = [0.01959731]
+Negative Error = [-0.0166092]
+Training loss = 0.003898484632372856
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 7ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.005932532716542482
+test loss =  0.0005229383823461831
+Positive Error = [0.01572286]
+Negative Error = [-0.01231853]
+Training loss = 0.005932532716542482
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.002753758104518056
+test loss =  0.0009656684705987573
+Positive Error = [0.02489391]
+Negative Error = [-0.01074794]
+Training loss = 0.002753758104518056
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 7ms/step
+50/50 [==============================] - 0s 7ms/step
+train loss =  0.004961279220879078
+test loss =  0.0009080478339456022
+Positive Error = [0.02414987]
+Negative Error = [-0.01096192]
+Training loss = 0.004961279220879078
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.0030666913371533155
+test loss =  0.0021042749285697937
+Positive Error = [0.01494486]
+Negative Error = [-0.04655459]
+Training loss = 0.0030666913371533155
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.004112011753022671
+test loss =  0.00044485076796263456
+Positive Error = [0.0133244]
+Negative Error = [-0.0189395]
+Training loss = 0.004112011753022671
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.003933507017791271
+test loss =  0.00047559852828271687
+Positive Error = [0.01473744]
+Negative Error = [-0.01239818]
+Training loss = 0.003933507017791271
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.006460470613092184
+test loss =  0.0006874327082186937
+Positive Error = [0.02053867]
+Negative Error = [-0.01903233]
+Training loss = 0.006460470613092184
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.003443255089223385
+test loss =  0.0007108256104402244
+Positive Error = [0.01262682]
+Negative Error = [-0.02568194]
+Training loss = 0.003443255089223385
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 7ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.005658401176333427
+test loss =  0.0005470224423334002
+Positive Error = [0.01687632]
+Negative Error = [-0.01230111]
+Training loss = 0.005658401176333427
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 7ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.002758587943390012
+test loss =  0.0005532720824703574
+Positive Error = [0.01830659]
+Negative Error = [-0.0134827]
+Training loss = 0.002758587943390012
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 2s 6ms/step
+50/50 [==============================] - 0s 6ms/step
+train loss =  0.005117675289511681
+test loss =  0.00041033781599253416
+Positive Error = [0.01264043]
+Negative Error = [-0.01897547]
+Training loss = 0.005117675289511681
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 3s 12ms/step
+49/49 [==============================] - 1s 12ms/step
+train loss =  0.0033290106803178787
+test loss =  0.0009528497466817498
+Positive Error = [0.02937557]
+Negative Error = [-0.02161259]
+Training loss = 0.0033290106803178787
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 3s 12ms/step
+49/49 [==============================] - 1s 11ms/step
+train loss =  0.006669505033642054
+test loss =  0.000879933824762702
+Positive Error = [0.02119733]
+Negative Error = [-0.03460349]
+Training loss = 0.006669505033642054
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 3s 12ms/step
+49/49 [==============================] - 1s 11ms/step
+train loss =  0.0032331172842532396
+test loss =  0.001173803466372192
+Positive Error = [0.03464354]
+Negative Error = [-0.02191051]
+Training loss = 0.0032331172842532396
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 12ms/step
+49/49 [==============================] - 1s 12ms/step
+train loss =  0.005072273313999176
+test loss =  0.0012059740256518126
+Positive Error = [0.02181916]
+Negative Error = [-0.04129466]
+Training loss = 0.005072273313999176
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 12ms/step
+49/49 [==============================] - 1s 11ms/step
+train loss =  0.0029567626770585775
+test loss =  0.00045006006257608533
+Positive Error = [0.0228129]
+Negative Error = [-0.03014627]
+Training loss = 0.0029567626770585775
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 3s 12ms/step
+49/49 [==============================] - 1s 11ms/step
+train loss =  0.004174897447228432
+test loss =  0.0008220633608289063
+Positive Error = [0.02909694]
+Negative Error = [-0.02276819]
+Training loss = 0.004174897447228432
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 8s 14ms/step
+49/49 [==============================] - 1s 13ms/step
+train loss =  0.0039004269056022167
+test loss =  0.0006166640087030828
+Positive Error = [0.02299457]
+Negative Error = [-0.02385041]
+Training loss = 0.0039004269056022167
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 12ms/step
+49/49 [==============================] - 1s 12ms/step
+train loss =  0.006581501569598913
+test loss =  0.0006147469975985587
+Positive Error = [0.02353228]
+Negative Error = [-0.02684844]
+Training loss = 0.006581501569598913
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 12ms/step
+49/49 [==============================] - 1s 12ms/step
+/Users/Kevin1/Kevin/Study/Sem4/AIAp/Trading-Bot/evaluate-model.py:36: RuntimeWarning: More than 20 figures have been opened. Figures created through the pyplot interface (`matplotlib.pyplot.figure`) are retained until explicitly closed and may consume too much memory. (To control this warning, see the rcParam `figure.max_open_warning`).
+  fig = plt.figure()
+train loss =  0.0030280202627182007
+test loss =  0.0005388304707594216
+Positive Error = [0.02350538]
+Negative Error = [-0.0256308]
+Training loss = 0.0030280202627182007
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 12ms/step
+49/49 [==============================] - 1s 12ms/step
+train loss =  0.006151820532977581
+test loss =  0.00047601028927601874
+Positive Error = [0.02277139]
+Negative Error = [-0.02633019]
+Training loss = 0.006151820532977581
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 5s 18ms/step
+49/49 [==============================] - 1s 17ms/step
+train loss =  0.003284919774159789
+test loss =  0.0009659591596573591
+Positive Error = [0.0214094]
+Negative Error = [-0.03805014]
+Training loss = 0.003284919774159789
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 5s 17ms/step
+49/49 [==============================] - 1s 19ms/step
+train loss =  0.005317544098943472
+test loss =  0.0011345348320901394
+Positive Error = [0.02250627]
+Negative Error = [-0.04067551]
+Training loss = 0.005317544098943472
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 6s 21ms/step
+48/48 [==============================] - 1s 26ms/step
+train loss =  0.003621503943577409
+test loss =  0.0006235121982172132
+Positive Error = [0.0317476]
+Negative Error = [-0.03354897]
+Training loss = 0.003621503943577409
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 6s 24ms/step
+48/48 [==============================] - 1s 28ms/step
+train loss =  0.006027042865753174
+test loss =  0.000507619115523994
+Positive Error = [0.02799598]
+Negative Error = [-0.03612993]
+Training loss = 0.006027042865753174
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 6s 21ms/step
+48/48 [==============================] - 1s 18ms/step
+train loss =  0.0032088200096040964
+test loss =  0.0004984349361620843
+Positive Error = [0.03060843]
+Negative Error = [-0.0386292]
+Training loss = 0.0032088200096040964
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 6s 21ms/step
+48/48 [==============================] - 1s 22ms/step
+train loss =  0.004890494979918003
+test loss =  0.000552007753867656
+Positive Error = [0.0298169]
+Negative Error = [-0.03660131]
+Training loss = 0.004890494979918003
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 6s 23ms/step
+48/48 [==============================] - 1s 23ms/step
+train loss =  0.0026038652285933495
+test loss =  0.000434048764873296
+Positive Error = [0.0326397]
+Negative Error = [-0.03902381]
+Training loss = 0.0026038652285933495
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 19ms/step
+48/48 [==============================] - 1s 16ms/step
+train loss =  0.0042541068978607655
+test loss =  0.0006774356588721275
+Positive Error = [0.0325148]
+Negative Error = [-0.03361949]
+Training loss = 0.0042541068978607655
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 17ms/step
+48/48 [==============================] - 1s 17ms/step
+train loss =  0.0036686069797724485
+test loss =  0.0005761174252256751
+Positive Error = [0.03031872]
+Negative Error = [-0.03479826]
+Training loss = 0.0036686069797724485
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 17ms/step
+48/48 [==============================] - 1s 16ms/step
+train loss =  0.007949707098305225
+test loss =  0.0006702861865051091
+Positive Error = [0.02957368]
+Negative Error = [-0.03553897]
+Training loss = 0.007949707098305225
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 17ms/step
+48/48 [==============================] - 1s 17ms/step
+train loss =  0.003324645571410656
+test loss =  0.0004911081050522625
+Positive Error = [0.03103074]
+Negative Error = [-0.03600366]
+Training loss = 0.003324645571410656
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 19ms/step
+48/48 [==============================] - 1s 17ms/step
+train loss =  0.006015524733811617
+test loss =  0.0005883805570192635
+Positive Error = [0.03093375]
+Negative Error = [-0.03483454]
+Training loss = 0.006015524733811617
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 4s 17ms/step
+48/48 [==============================] - 1s 16ms/step
+train loss =  0.002999365795403719
+test loss =  0.00044561040704138577
+Positive Error = [0.03059982]
+Negative Error = [-0.03704536]
+Training loss = 0.002999365795403719
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 4s 16ms/step
+48/48 [==============================] - 1s 16ms/step
+train loss =  0.0055953264236450195
+test loss =  0.0005806752596981823
+Positive Error = [0.03116597]
+Negative Error = [-0.03484942]
+Training loss = 0.0055953264236450195
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0021577230654656887
+test loss =  0.000415179441915825
+Positive Error = [0.01389638]
+Negative Error = [-0.01285507]
+Training loss = 0.0021577230654656887
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 9ms/step
+train loss =  0.004109665751457214
+test loss =  0.0003466977213975042
+Positive Error = [0.01145614]
+Negative Error = [-0.01350076]
+Training loss = 0.004109665751457214
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.001928273937664926
+test loss =  0.0005907003651373088
+Positive Error = [0.01896338]
+Negative Error = [-0.01281122]
+Training loss = 0.001928273937664926
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0034419328439980745
+test loss =  0.0005231270333752036
+Positive Error = [0.01739584]
+Negative Error = [-0.01295263]
+Training loss = 0.0034419328439980745
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0019747642800211906
+test loss =  0.0004693145165219903
+Positive Error = [0.01521554]
+Negative Error = [-0.02072388]
+Training loss = 0.0019747642800211906
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.002777651883661747
+test loss =  0.0005337167531251907
+Positive Error = [0.01963338]
+Negative Error = [-0.01338739]
+Training loss = 0.002777651883661747
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.002205918077379465
+test loss =  0.00043297934462316334
+Positive Error = [0.01362176]
+Negative Error = [-0.01229]
+Training loss = 0.002205918077379465
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0041959164664149284
+test loss =  0.00035747390938922763
+Positive Error = [0.01215158]
+Negative Error = [-0.01340428]
+Training loss = 0.0041959164664149284
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0019755205139517784
+test loss =  0.0003471896343398839
+Positive Error = [0.01256272]
+Negative Error = [-0.01415535]
+Training loss = 0.0019755205139517784
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0035626732278615236
+test loss =  0.00031295427470467985
+Positive Error = [0.01241333]
+Negative Error = [-0.01406161]
+Training loss = 0.0035626732278615236
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0018673849990591407
+test loss =  0.0003338336246088147
+Positive Error = [0.01269263]
+Negative Error = [-0.01538571]
+Training loss = 0.0018673849990591407
+Step is  30
+Epoch is  3
+Size of x_test  1569
+Size of x_train  6369
+(6369, 30, 1)
+200/200 [==============================] - 3s 8ms/step
+50/50 [==============================] - 0s 8ms/step
+train loss =  0.0034614254254847765
+test loss =  0.00045358159695751965
+Positive Error = [0.01551058]
+Negative Error = [-0.01295865]
+Training loss = 0.0034614254254847765
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.0020851599983870983
+test loss =  0.00041297468123957515
+Positive Error = [0.02141115]
+Negative Error = [-0.02717689]
+Training loss = 0.0020851599983870983
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 15ms/step
+49/49 [==============================] - 1s 15ms/step
+train loss =  0.003506612265482545
+test loss =  0.00038578594103455544
+Positive Error = [0.02127028]
+Negative Error = [-0.02696727]
+Training loss = 0.003506612265482545
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.0019289074698463082
+test loss =  0.0011141159338876605
+Positive Error = [0.02337979]
+Negative Error = [-0.04180387]
+Training loss = 0.0019289074698463082
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.003096930682659149
+test loss =  0.0005698371678590775
+Positive Error = [0.02638075]
+Negative Error = [-0.02465879]
+Training loss = 0.003096930682659149
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 15ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.001770661910995841
+test loss =  0.00032475939951837063
+Positive Error = [0.02339543]
+Negative Error = [-0.0291534]
+Training loss = 0.001770661910995841
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.002890137257054448
+test loss =  0.0005820996593683958
+Positive Error = [0.02751739]
+Negative Error = [-0.02504086]
+Training loss = 0.002890137257054448
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 15ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.002363902982324362
+test loss =  0.00045645987847819924
+Positive Error = [0.02224048]
+Negative Error = [-0.02798322]
+Training loss = 0.002363902982324362
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 15ms/step
+49/49 [==============================] - 1s 15ms/step
+train loss =  0.003954566083848476
+test loss =  0.00046580296475440264
+Positive Error = [0.02052779]
+Negative Error = [-0.02548409]
+Training loss = 0.003954566083848476
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 15ms/step
+train loss =  0.002112308517098427
+test loss =  0.0005726555828005075
+Positive Error = [0.02549508]
+Negative Error = [-0.02425121]
+Training loss = 0.002112308517098427
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.0035888878628611565
+test loss =  0.00040944668580777943
+Positive Error = [0.02144536]
+Negative Error = [-0.02758861]
+Training loss = 0.0035888878628611565
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 14ms/step
+49/49 [==============================] - 1s 14ms/step
+train loss =  0.0020289875101298094
+test loss =  0.0018028834601864219
+Positive Error = [0.04438499]
+Negative Error = [-0.02191998]
+Training loss = 0.0020289875101298094
+Step is  60
+Epoch is  3
+Size of x_test  1539
+Size of x_train  6339
+(6339, 60, 1)
+199/199 [==============================] - 4s 15ms/step
+49/49 [==============================] - 1s 16ms/step
+train loss =  0.003221744205802679
+test loss =  0.00031267505255527794
+Positive Error = [0.02198508]
+Negative Error = [-0.02777819]
+Training loss = 0.003221744205802679
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 21ms/step
+48/48 [==============================] - 1s 24ms/step
+train loss =  0.0020950702019035816
+test loss =  0.0004251152276992798
+Positive Error = [0.03091537]
+Negative Error = [-0.03732447]
+Training loss = 0.0020950702019035816
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 21ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.003770588431507349
+test loss =  0.0017539507243782282
+Positive Error = [0.04850768]
+Negative Error = [-0.03261352]
+Training loss = 0.003770588431507349
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 21ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.0018565773498266935
+test loss =  0.00042278834735043347
+Positive Error = [0.03149804]
+Negative Error = [-0.03625342]
+Training loss = 0.0018565773498266935
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 21ms/step
+train loss =  0.003072454361245036
+test loss =  0.00037790078204125166
+Positive Error = [0.03078537]
+Negative Error = [-0.03680607]
+Training loss = 0.003072454361245036
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.0018211179412901402
+test loss =  0.00032426510006189346
+Positive Error = [0.03138078]
+Negative Error = [-0.03766625]
+Training loss = 0.0018211179412901402
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.0028314203955233097
+test loss =  0.00047158985398709774
+Positive Error = [0.03035361]
+Negative Error = [-0.04010675]
+Training loss = 0.0028314203955233097
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 21ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.0024029638152569532
+test loss =  0.0004929784336127341
+Positive Error = [0.03270179]
+Negative Error = [-0.03649016]
+Training loss = 0.0024029638152569532
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.003943647723644972
+test loss =  0.000823174137622118
+Positive Error = [0.0321223]
+Negative Error = [-0.04328137]
+Training loss = 0.003943647723644972
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.0021110009402036667
+test loss =  0.00036336827906779945
+Positive Error = [0.03040568]
+Negative Error = [-0.03674198]
+Training loss = 0.0021110009402036667
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.003940908703953028
+test loss =  0.0004089460417162627
+Positive Error = [0.02910273]
+Negative Error = [-0.0366469]
+Training loss = 0.003940908703953028
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 20ms/step
+train loss =  0.002052529715001583
+test loss =  0.0005406085983850062
+Positive Error = [0.03444426]
+Negative Error = [-0.04126601]
+Training loss = 0.002052529715001583
+Step is  90
+Epoch is  3
+Size of x_test  1509
+Size of x_train  6309
+(6309, 90, 1)
+198/198 [==============================] - 5s 20ms/step
+48/48 [==============================] - 1s 21ms/step
+train loss =  0.00303174601867795
+test loss =  0.0004448506806511432
+Positive Error = [0.03083212]
+Negative Error = [-0.03527055]
+Training loss = 0.00303174601867795
+    rnn_units  step  epochs  batch_size  learning_rate  dropout  test loss  \
+0          25    30       3          32         0.0005      0.1   0.000586
+1          25    30       3          32         0.0005      0.2   0.000523
+2          25    30       3          32         0.0010      0.1   0.000966
+3          25    30       3          32         0.0010      0.2   0.000908
+4          25    30       3          32         0.0020      0.1   0.002104
+..        ...   ...     ...         ...            ...      ...        ...
+67         50    90       3          64         0.0005      0.2   0.000823
+68         50    90       3          64         0.0010      0.1   0.000363
+69         50    90       3          64         0.0010      0.2   0.000409
+70         50    90       3          64         0.0020      0.1   0.000541
+71         50    90       3          64         0.0020      0.2   0.000445
+
+    train loss     ratio  error_neg  error_pos
+0     0.003898  0.150228  -0.016609   0.019597
+1     0.005933  0.088148  -0.012319   0.015723
+2     0.002754  0.350673  -0.010748   0.024894
+3     0.004961  0.183027  -0.010962   0.024150
+4     0.003067  0.686171  -0.046555   0.014945
+..         ...       ...        ...        ...
+67    0.003944  0.208734  -0.043281   0.032122
+68    0.002111  0.172131  -0.036742   0.030406
+69    0.003941  0.103769  -0.036647   0.029103
+70    0.002053  0.263386  -0.041266   0.034444
+71    0.003032  0.146731  -0.035271   0.030832
+
+[72 rows x 11 columns]
+
+Process finished with exit code 0
