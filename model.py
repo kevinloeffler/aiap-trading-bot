@@ -6,7 +6,7 @@ import tensorflow as tf
 
 def get_data():
     # Import Data
-    dataset_raw = pd.read_csv('data/training_data_AAPL.csv') #TODO final with ETH
+    dataset_raw = pd.read_csv('data/training_data_ETHUSD.csv')
 
     # Preprocess Data: Drop timestamp column
     dataset = dataset_raw.drop(['timestamp'], axis=1)
@@ -76,7 +76,7 @@ def train_model(params, training_data):
     history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size)
 
     # Save model
-    #print('SAVING')
-    #model.save('model')
+    print('SAVING')
+    model.save('model')
     return history, model
 

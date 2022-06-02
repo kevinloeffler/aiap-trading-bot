@@ -35,7 +35,7 @@ def plot_performance(params, history, model, training_data, testing_data):
     # plot and save to png
     fig = plt.figure()
     ax = fig.add_subplot()
-    ax.plot(np.arange(0, len(training_data)), training_data, color="tab:blue", label='Tests')
+    ax.plot(np.arange(0, len(training_data)), training_data, color="tab:blue", label='Dataset')
     ax.plot(np.arange(0, len(testing_data))+split_index, testing_data, color="tab:blue")
     ax.plot(np.arange(len(predict_train))+step, predict_train, color="tab:orange", label='Predictions')
     ax.plot(np.arange(len(predict_test))+split_index+step, predict_test, color="tab:orange")
