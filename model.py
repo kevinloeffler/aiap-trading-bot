@@ -59,6 +59,9 @@ def train_model(params, training_data):
     model.add(keras.layers.LSTM(units, return_sequences=True))
     model.add(keras.layers.Dropout(dropout))
 
+    model.add(keras.layers.LSTM(units, return_sequences=True))
+    model.add(keras.layers.Dropout(dropout))
+
     model.add(keras.layers.LSTM(units))
     model.add(keras.layers.Dropout(dropout))
 
@@ -73,7 +76,7 @@ def train_model(params, training_data):
     history = model.fit(x_train, y_train, epochs=epochs, batch_size=batch_size)
 
     # Save model
-    print('SAVING')
-    model.save('model')
+    #print('SAVING')
+    #model.save('model')
     return history, model
 
