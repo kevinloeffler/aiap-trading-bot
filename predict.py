@@ -10,8 +10,10 @@ def prediction_to_action(x: float) -> (float, str):
     x: float = (x - 1) * AGGRESSIVENESS + 1
 
     if x > 2:
+        print('Pred to Action: x bigger than 2')
         x = 2
     elif x < 0:
+        print('Pred to Action: x smaller than 0')
         x = 0
 
     print('x after:', x)
