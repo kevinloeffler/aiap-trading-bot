@@ -57,7 +57,7 @@ params = {
     "rnn_units": [25, 50],
     "step": [30, 60, 90],
     "epochs": [10, 30],
-    "batch_size": [32],
+    "batch_size": [32, 64],
     "learning_rate": [0.0005, 0.002],
     "dropout": [0.1, 0.3]
 }
