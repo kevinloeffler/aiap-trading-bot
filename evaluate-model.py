@@ -6,7 +6,6 @@ from timeit import default_timer as timer
 from sklearn.preprocessing import MinMaxScaler
 
 
-
 def plot_performance(params, history, model, training_data, testing_data):
 
     step = params["step"]
@@ -56,6 +55,7 @@ def plot_performance(params, history, model, training_data, testing_data):
     fig.set_size_inches(300/25.4, 100/25.4)
     plt.savefig(f"train/{filename}.png", dpi=300)
     return train_loss, test_loss
+
 
 TRAIN_TEST_SPLIT = 0.8
 
@@ -115,7 +115,7 @@ for combination in combinations:
     # train a network for each parameter combination
     history, model = train_model(combination, training_data)
 
-    #save the model, you dont need to train it again if you want to use it further
+    # save the model, you dont need to train it again if you want to use it in the further
     models.append([history, model])
     passed = timer()-start
     avg = passed / i
@@ -149,7 +149,7 @@ for dfIter in range(len(df)):
 
     current_batch = first_batch.reshape((1, step, 1))
 
-    for i in range (len(testing_data)):
+    for i in range(len(testing_data)):
         current_pred = models[dfIter][1].predict(current_batch)[0]
         predictions.append(current_pred)
         current_batch_update = current_batch[:, 1:, :]
