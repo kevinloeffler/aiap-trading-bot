@@ -142,7 +142,7 @@ import pandas as pd
 df = pd.DataFrame.from_dict(combinations)
 df = df.drop(['rnn_units', 'rnn_activation', 'dense_neurons', 'batch_size', 'learning_rate'], axis=1)
 
-for dfIter in range(len(df)) :
+for dfIter in range(len(df)):
     predictions = []
     step = df.loc[dfIter, "step"]
     first_batch = training_data[-step:]
@@ -153,9 +153,9 @@ for dfIter in range(len(df)) :
         current_pred = models[dfIter][1].predict(current_batch)[0]
         predictions.append(current_pred)
         current_batch_update = current_batch[:, 1:, :]
-        print("mi")
+        print("before issue")
         current_batch = np.append(current_batch_update, [[current_pred]], axis=2)
-        print("sdsfdsfsfdfdsfdsfdsfdsfds")
+        print("after issue")
 
     scaler = MinMaxScaler(feature_range=(0, 1))
     predictions_inverse_scaled = scaler.inverse_transform(predictions)
