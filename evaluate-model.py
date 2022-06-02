@@ -53,14 +53,16 @@ def plot_performance(params, history, model, training_data, testing_data):
 
 TRAIN_TEST_SPLIT = 0.8
 
+
 params = {
     "rnn_units": [25, 50],
     "step": [30, 60, 90],
-    "epochs": [10, 30],
+    "epochs": [3],
     "batch_size": [32, 64],
-    "learning_rate": [0.0005, 0.002],
-    "dropout": [0.1, 0.3]
+    "learning_rate": [0.0005, 0.001, 0.002],
+    "dropout": [0.1, 0.2]
 }
+
 
 # read the data
 dataset = get_data()
