@@ -33,7 +33,7 @@ def predict(prices: list) -> (float, str):
     # Prepare data
     prices_array = np.array(prices).reshape(-1, 1)
     scaled_prices = scaler.fit_transform(prices_array)
-    prices_array = np.reshape(scaled_prices, (1, 60, 1))
+    prices_array = np.reshape(scaled_prices, (1, 30, 1))
     # Predict
     prediction_raw = model.predict(prices_array)
     prediction = scaler.inverse_transform(prediction_raw)
