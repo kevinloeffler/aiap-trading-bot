@@ -1,6 +1,6 @@
 """ A list of all available stocks and cryptos """
 
-symbols = {
+SYMBOLS = {
     'AAPL': {
         'is_crypto': False,
         'precision': 5,
@@ -16,4 +16,13 @@ symbols = {
         'precision': 3,
         'path': 'data/training_data_ETHUSD.csv',
     },
+}
+
+PARAMETERS = {
+    "rnn_units": 50,
+    "step": 30,
+    "epochs": 100,
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "dropout": 0.2,
 }
