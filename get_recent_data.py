@@ -1,29 +1,33 @@
-from symbols import symbols
+from config import SYMBOLS
 from alpaca_trade_api.rest import REST, TimeFrame
-import csv
+import datetime as dt
 
 # Select the target symbol:
 TARGET = 'ETHUSD'
-# Select the time period
-START_DATE = '2022-06-02T12:00:00Z'
-END_DATE = '2022-06-02T23:59:59Z'
 
 
-api: REST = REST()
-SYMBOL: str = TARGET
-SAVE_LOCATION: str = symbols[TARGET]['path']
+def format_datetime(datetime: dt.datetime) -> str:
+    return f'{datetime.year}-{str(datetime.month).rjust(2, "0")}-{str(datetime.day).rjust(2, "0")}' \
+           f'T{str(datetime.hour).rjust(2, "0")}:{str(datetime.minute).rjust(2, "0")}:59Z'
 
 
-if symbols[TARGET]['is_crypto']:
-    bars = api.get_crypto_bars(TARGET, TimeFrame.Minute, START_DATE, END_DATE)
-else:
-    bars = api.get_bars_iter(SYMBOL, TimeFrame.Minute, START_DATE, END_DATE, adjustment='raw')
+def get_last_prices(length: int) -> [float]:
+    now = dt.datetime.now(tz=dt.timezone.utc)
+    start_date = format_datetime(datetime=now - dt.timedelta(hours=2))
+    end_date = format_datetime(datetime=now)
 
+    api: REST = REST()
+    prices = []
 
-# CSV
-with open('data/training_data_ETHUSD_current.csv', 'w') as file:
-    csv_writer = csv.writer(file)
-    csv_writer.writerow(['average-price'])
+    if not SYMBOLS[TARGET]['is_crypto']:
+        print('ERROR: Stocks are not implemented')
+
+    bars = api.get_crypto_bars(TARGET, timeframe=TimeFrame.Minute, start=start_date, end=end_date)
 
     for bar in bars:
-        csv_writer.writerow([bar._raw['vw']])
+        prices.append(bar._raw['vw'])
+
+    prices.reverse()
+    prices = prices[0: length]
+
+    return prices
