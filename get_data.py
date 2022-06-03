@@ -1,4 +1,4 @@
-from symbols import symbols
+from config import SYMBOLS
 from alpaca_trade_api.rest import REST, TimeFrame
 import csv
 
@@ -11,10 +11,10 @@ END_DATE = '2022-04-30T23:59:59Z'
 
 api: REST = REST()
 SYMBOL: str = TARGET
-SAVE_LOCATION: str = symbols[TARGET]['path']
+SAVE_LOCATION: str = SYMBOLS[TARGET]['path']
 
 
-if symbols[TARGET]['is_crypto']:
+if SYMBOLS[TARGET]['is_crypto']:
     bars = api.get_crypto_bars(TARGET, TimeFrame.Minute, START_DATE, END_DATE)
 else:
     bars = api.get_bars_iter(SYMBOL, TimeFrame.Minute, START_DATE, END_DATE, adjustment='raw')
