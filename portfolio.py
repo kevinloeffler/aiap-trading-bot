@@ -1,6 +1,12 @@
 from alpaca_trade_api.rest import REST
+import dotenv
+dotenv.load_dotenv()
 
-api: REST = REST()
+KEY_ID = dotenv.get_key(dotenv_path='.env', key_to_get='APCA_API_KEY_ID')
+SECRET_KEY = dotenv.get_key(dotenv_path='.env', key_to_get='APCA_API_SECRET_KEY')
+
+
+api: REST = REST(key_id=KEY_ID, secret_key=SECRET_KEY)
 
 
 def trade_stock(symbol: str, quantity: float) -> bool:
