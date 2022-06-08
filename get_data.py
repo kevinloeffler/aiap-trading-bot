@@ -1,6 +1,8 @@
 from config import SYMBOLS
 from alpaca_trade_api.rest import REST, TimeFrame
 import csv
+import dotenv
+dotenv.load_dotenv()
 
 # Select the target symbol:
 TARGET = 'ETHUSD'
@@ -8,8 +10,10 @@ TARGET = 'ETHUSD'
 START_DATE = '2022-04-01T09:00:00Z'
 END_DATE = '2022-04-30T23:59:59Z'
 
+KEY_ID = dotenv.get_key(dotenv_path='.env', key_to_get='APCA_API_KEY_ID')
+SECRET_KEY = dotenv.get_key(dotenv_path='.env', key_to_get='APCA_API_SECRET_KEY')
 
-api: REST = REST()
+api: REST = REST(key_id=KEY_ID, secret_key=SECRET_KEY)
 SYMBOL: str = TARGET
 SAVE_LOCATION: str = SYMBOLS[TARGET]['path']
 

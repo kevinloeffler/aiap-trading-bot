@@ -4,6 +4,7 @@ from sklearn.preprocessing import MinMaxScaler
 import keras
 import tensorflow as tf
 
+
 def get_data():
     # Import Data
     dataset_raw = pd.read_csv('data/training_data_ETHUSD.csv')
