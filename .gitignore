@@ -2,3 +2,9 @@
 venv
 .idea
 data
+
+__pycache__/
+bin/
+lib/
+lib64
+pyvenv.cfg
