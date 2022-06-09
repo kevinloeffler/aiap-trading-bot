@@ -39,5 +39,5 @@ def predict(prices: list) -> (float, str):
     prediction = scaler.inverse_transform(prediction_raw)
     print('Prediction:', prediction)
     # Translate to action
-    price_difference = prediction - last_price
+    price_difference = prediction / last_price
     return prediction_to_action(x=price_difference)
