@@ -70,9 +70,9 @@ async def start_stream(stream: str):
                 action, side = predict(price_queue)
 
                 current_holding = portfolio.get_position(TARGET_SYMBOL)
-                new_holding = current_holding * action
-                quantity = np.round(abs(current_holding - new_holding), SYMBOLS[TARGET_SYMBOL]['precision'])
-                print('Quantity:', quantity)
+                new_holding = float(current_holding * action)
+
+                quantity = round(abs(current_holding - new_holding), SYMBOLS[TARGET_SYMBOL]['precision'])
                 portfolio.trade_crypto(symbol=TARGET_SYMBOL, quantity=quantity, side=side)
 
                 print('=== END OF RUN ===')
