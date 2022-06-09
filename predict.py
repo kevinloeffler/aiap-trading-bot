@@ -5,7 +5,7 @@ from sklearn.preprocessing import MinMaxScaler
 
 
 def prediction_to_action(x: float) -> (float, str):
-    AGGRESSIVENESS: int = 2  # a higher value means bigger movements on each action
+    AGGRESSIVENESS: int = 1  # a higher value means bigger movements on each action
     x: float = (x - 1) * AGGRESSIVENESS + 1
 
     if x > 2:
