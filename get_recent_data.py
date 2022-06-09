@@ -35,4 +35,6 @@ def get_last_prices(length: int) -> [float]:
     prices.reverse()
     prices = prices[0: length]
 
+    print(f'Fetched recent prices. Last price was: {prices[-1]}')
+
     return prices
