@@ -17,6 +17,8 @@ WS_STREAM_URL = 'wss://stream.data.alpaca.markets/v1beta1/crypto' if IS_CRYPTO e
 AUTH_MSG = {'action': 'auth', 'key': f'{os.getenv("APCA_API_KEY_ID")}', 'secret': f'{os.getenv("APCA_API_SECRET_KEY")}'}
 SUBSCRIPTION_MSG = {"action": "subscribe", "bars": [TARGET_SYMBOL]}
 
+MAX_AMOUNT = 40
+
 price_queue = get_last_prices(length=PARAMETERS['step'])
 
 
@@ -72,8 +74,11 @@ async def start_stream(stream: str):
                 current_holding = portfolio.get_position(TARGET_SYMBOL)
                 new_holding = float(current_holding * action)
 
-                quantity = round(abs(current_holding - new_holding), SYMBOLS[TARGET_SYMBOL]['precision'])
-                portfolio.trade_crypto(symbol=TARGET_SYMBOL, quantity=quantity, side=side)
+                if current_holding > MAX_AMOUNT:
+                    quantity = round(abs(current_holding - new_holding), SYMBOLS[TARGET_SYMBOL]['precision'])
+                    portfolio.trade_crypto(symbol=TARGET_SYMBOL, quantity=quantity, side=side)
+                else:
+                    print(f'Max Amount of {TARGET_SYMBOL} reached.')
 
                 print('=== END OF RUN ===')
 
