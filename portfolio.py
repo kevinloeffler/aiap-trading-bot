@@ -14,9 +14,12 @@ def trade_stock(symbol: str, quantity: float) -> bool:
 
 
 def trade_crypto(symbol: str, quantity: float, side: str) -> bool:
-    print(f'ORDER: {side} {quantity}')
-    order = api.submit_order(symbol, qty=quantity, side=side)
-    return True if order.status == 'accepted' else False
+    if not quantity == 0:
+        print(f'ORDER: {side} {quantity}')
+        order = api.submit_order(symbol, qty=quantity, side=side)
+        return True if order.status == 'accepted' else False
+    else:
+        print('ORDER of 0 skipped')
 
 
 def get_position(symbol: str) -> float:
