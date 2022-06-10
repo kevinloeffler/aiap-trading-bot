@@ -74,7 +74,7 @@ async def start_stream(stream: str):
                 current_holding = portfolio.get_position(TARGET_SYMBOL)
                 new_holding = float(current_holding * action)
 
-                if current_holding > MAX_AMOUNT:
+                if current_holding < MAX_AMOUNT:
                     quantity = round(abs(current_holding - new_holding), SYMBOLS[TARGET_SYMBOL]['precision'])
                     portfolio.trade_crypto(symbol=TARGET_SYMBOL, quantity=quantity, side=side)
                 else:
